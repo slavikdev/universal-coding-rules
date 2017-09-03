@@ -1,6 +1,19 @@
 # Universal Coding Rules
 Set of rules which can be used as a guideline in any software project.
 
+## Classes
+### Layout
+* Put your publics above and privates below.
+* Organize class members in the following order:
+  1. Constructors.
+  2. Destructors.
+  3. Public attributes.
+  4. Public methods.
+  5. Private attributes.
+  6. Private methods.
+  7. Constants (keep private).
+  8. Fields (keep private).
+
 ## Functions, methods and procedures
 I’ll be using the word *function*, but the rules below apply to methods, procedures and even constructors.
 
