@@ -29,6 +29,9 @@ Set of rules which can be used as a guideline in any software project.
 * Avoid switch statements at all costs. Replace them with polymorphism. Switch statement indicates your function does more than one thing.
 * Multiple if/then/else is essentially a switch statement and should be avoided.
 
+## Exceptions
+* Prefer custom exceptions, created within limited scope (e.g. for specific class). Name of an exception should be very specific and when combined with the exception’s scope, should describe the meaning well. You don’t even need long exception message when scope and name describe exception’s cause well.
+
 ## Loops
 * Avoid breaking loops or returning from loop’s body. Such action complicates code and breaks structure.
 
