@@ -14,6 +14,9 @@ Set of rules which can be used as a guideline in any software project.
   7. Constants (keep private).
   8. Fields (keep private).
   
+## Code flow
+* Tell, don’t ask. You shouldn’t ask state of an object and make decisions based on that state in outer scope. Instead tell object to do the job because it already knows its state (which should be not exposed, btw).
+  
 ## Conditions
 ### Switch statements
 * Avoid switch statements at all costs. Replace them with polymorphism. Switch statement indicates your function does more than one thing.
