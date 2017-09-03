@@ -29,6 +29,9 @@ Set of rules which can be used as a guideline in any software project.
 * Avoid switch statements at all costs. Replace them with polymorphism. Switch statement indicates your function does more than one thing.
 * Multiple if/then/else is essentially a switch statement and should be avoided.
 
+## Loops
+* Avoid breaking loops or returning from loop’s body. Such action complicates code and breaks structure.
+
 ## Functions, methods and procedures
 I’ll be using the word *function*, but the rules below apply to methods, procedures and even constructors.
 
