@@ -13,6 +13,11 @@ Set of rules which can be used as a guideline in any software project.
   6. Private methods.
   7. Constants (keep private).
   8. Fields (keep private).
+  
+## Conditions
+### Switch statements
+* Avoid switch statements at all costs. Replace them with polymorphism. Switch statement indicates your function does more than one thing.
+* Multiple if/then/else is essentially a switch statement and should be avoided.
 
 ## Functions, methods and procedures
 I’ll be using the word *function*, but the rules below apply to methods, procedures and even constructors.
@@ -29,7 +34,7 @@ I’ll be using the word *function*, but the rules below apply to methods, proce
 
 ## Acknowledgments & Thanks
 
-This set of rules is based on some personal experience but it’s mostly influenced by these great authors:
+This set of rules is based on some personal experience and is mostly influenced by these great authors:
 * Robert C. Martin (Uncle Bob) and his book [Clean Code: A Handbook of Agile Software Craftsmanship](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882).
 * Steve McConnell and [Code Complete: A Practical Handbook of Software Construction](https://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670/).
 
