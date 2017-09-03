@@ -26,11 +26,14 @@ I’ll be using the word *function*, but the rules below apply to methods, proce
 * Keep your function’s body as small as possible. Break it into smaller functions or classes until further division is impossible.
 * Function must do only one thing.
 * Use if/switch statements carefully, because they usually indicade that your function does more than one thing.
+* Avoid temporal coupling. A function shouldn’t expect to be called in a certain order, after or before another function.
+* Don’t change any state. Like in functional programming a function must always produce the same result for the same input.
 
 ### Arguments
 * Don’t pass arguments which indicate state. Usually it’s boolean or enum, but integers or even strings are used sometimes. Remember: if you pass state indicator into a function it means your function does more than one thing.
 * Keep number of arguments no more than 3 (this rule might be avoid in constructors).
 * Don’t pass null/nil. In fact avoid using them at all. As a function argument they’re usually a hidden form of boolean.
+* Don’t output via arguments. Always use return statement.
 
 ## Acknowledgments & Thanks
 
