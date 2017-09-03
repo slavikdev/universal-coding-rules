@@ -17,6 +17,12 @@ Set of rules which can be used as a guideline in any software project.
 ## Code flow
 * Tell, don’t ask. You shouldn’t ask state of an object and make decisions based on that state in outer scope. Instead tell object to do the job because it already knows its state (which should be not exposed, btw).
 * Chained calls or so called ‘fluent’ syntax is a violation of the “tell, don’t ask” rule.
+* Only call methods on objects that are:
+  * Passed as arguments.
+  * Created locally.
+  * Instance variables.
+  * Globals.
+* Don’t call methods on objects that are returned from a previous method call.
   
 ## Conditions
 ### Switch statements
