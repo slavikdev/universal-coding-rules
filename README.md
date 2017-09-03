@@ -27,7 +27,9 @@ I’ll be using the word *function*, but the rules below apply to methods, proce
 * Function must do only one thing.
 * Use if/switch statements carefully, because they usually indicade that your function does more than one thing.
 * Avoid temporal coupling. A function shouldn’t expect to be called in a certain order, after or before another function.
-* Don’t change any state. Like in functional programming a function must always produce the same result for the same input.
+* Avoid changing state and creating side effects. Like in functional programming a function must always produce the same result for the same input.
+* If a function has side effects—it shouldn’t return anything. Such function can be called a command or procedure.
+* If a function doesn’t have side effects—it should return value.
 
 ### Arguments
 * Don’t pass arguments which indicate state. Usually it’s boolean or enum, but integers or even strings are used sometimes. Remember: if you pass state indicator into a function it means your function does more than one thing.
