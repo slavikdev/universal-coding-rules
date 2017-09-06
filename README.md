@@ -23,6 +23,13 @@ Set of rules which can be used as a guideline in any software project.
   * Instance variables.
   * Globals.
 * Don’t call methods on objects that are returned from a previous method call.
+
+## Comments
+* Only write comments in the following cases:
+  * Legal comments (if needed).
+  * Documentation for public API.
+  * If you absolutelly can’t make code simplier and obvious.
+*Otherwise don’t clutter your code!*
   
 ## Conditions
 ### Switch statements
