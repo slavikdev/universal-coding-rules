@@ -28,7 +28,8 @@ Set of rules which can be used as a guideline in any software project.
 * Only write comments in the following cases:
   * Legal comments (if needed).
   * Documentation for public API.
-  * If you absolutelly can’t make code simplier and obvious.
+  * If you absolutelly can’t make code simplier and obvious.  
+  
 *Otherwise don’t clutter your code!*
   
 ## Conditions
