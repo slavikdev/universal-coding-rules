@@ -1,6 +1,11 @@
 # Universal Coding Rules
 Set of rules which can be used as a guideline in any software project.
 
+## Architecture
+Specifics should depend on abstractions. Low level modules should depend on high level modules, not the other way.
+Business layer is an abstraction. Web application and database are low level specifics. Your domain objects
+should have no idea they are part of a web application or use a specific database.
+
 ## Classes
 ### Layout
 * Put your publics above and privates below.
