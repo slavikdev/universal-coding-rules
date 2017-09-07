@@ -13,6 +13,9 @@ Set of rules which can be used as a guideline in any software project.
   6. Private methods.
   7. Constants (keep private).
   8. Fields (keep private).
+## State
+* Don’t change state, make your objects immutable.
+* Don’t expose object’s state. Instead expose functions/methods which do something knowing about the state.
   
 ## Code flow
 * Tell, don’t ask. You shouldn’t ask state of an object and make decisions based on that state in outer scope. Instead tell object to do the job because it already knows its state (which should be not exposed, btw).
