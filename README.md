@@ -69,6 +69,17 @@ I’ll be using the word *function*, but the rules below apply to methods, proce
 * Don’t pass null/nil. In fact avoid using them at all. As a function argument they’re usually a hidden form of boolean.
 * Don’t output via arguments. Always use return statement.
 
+## Tests
+* Use TDD and Red → Green → Refactor cycle:
+  1. Don’t write code before tests.
+  2. Write enough testing code to see failure. Don’t design complete test.
+  3. Implement enough to pass the test.
+  4. Refactor if needed.
+  5. Repeat the cycle.
+
+Most developers don’t like TDD because they think *write test first* means writing a lot of testing code, which won’t even compile in some languages.
+Actually you should write very small portion of testing code, just to see failure. It can be as simple as `var product = new Product();`. If you don’t have the Product class yet—the test will fail! It’s your starting point.
+
 ## Acknowledgments & Thanks
 
 This set of rules is based on some personal experience and is mostly influenced by these great authors:
