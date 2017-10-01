@@ -20,6 +20,7 @@ Bad example:
   \models
   \views
 ```
+* “Good architecture maximizes number of decisions not made”.
 
 
 ## Classes
