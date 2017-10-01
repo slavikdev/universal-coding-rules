@@ -2,9 +2,25 @@
 Set of rules which can be used as a guideline in any software project.
 
 ## Architecture
-Specifics should depend on abstractions. Low level modules should depend on high level modules, not the other way.
+* Specifics should depend on abstractions. Low level modules should depend on high level modules, not the other way.
 Business layer is an abstraction. Web application and database are low level specifics. Your domain objects
 should have no idea they are part of a web application or use a specific database.
+* Architecture should be shaped by use-cases, not implementation details. Good example:
+```
+\YouApp
+  \customers
+  \products
+  \orders
+```
+
+Bad example:
+```
+\YouApp
+  \controllers
+  \models
+  \views
+```
+
 
 ## Classes
 ### Layout
